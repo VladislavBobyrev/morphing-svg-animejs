@@ -2,6 +2,8 @@
 
 Изменение svg в разнообразные формы
 
+![Lax 2.0 Gif](https://github.com/VladislavBobyrev/morphing-svg-animejs/blob/main/morph.gif)
+
 ## Команды
 
 |                        |                       |
