@@ -1,0 +1,103 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(89, 214, 139);
+  overflow: hidden;
+  transition: 1s;
+}
+
+body {
+  padding: 5rem;
+}
+
+#morph {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.interfase {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.interfase h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+.interfase p {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+.interfase button {
+  background: rgb(85, 167, 174);
+  color: rgb(63, 66, 69);
+  padding: 2rem 3rem;
+  border-radius: 5px 15px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.pointer {
+  pointer-events: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.info {
+  display: block;
+  color: aquamarine;
+  position: absolute;
+  text-align: 0;
+  z-index: 2;
+  transition: 1s;
+  -webkit-animation: tops 3s;
+          animation: tops 3s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-hide {
+  display: none;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes tops {
+  0% {
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes tops {
+  0% {
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
